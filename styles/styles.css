@@ -2,30 +2,60 @@
     background-color: #EFEFEF
 }
 
-p, ul, li {
+p, ul {
     text-align: center;
 }
 #header {
-    background-color: whitesmoke
-    position: relative; 
-    top: 15px
+    background-color: whitesmoke;
+    top: 15px;
+    text-align: left;
+}
+li {
+    text-align: left;
+}
+div {
+    
 }
 h1 {
     box-shadow: 0 5px 10px;
     text-align: center;
+    background: linear-gradient(90deg, #EFEFEF, rgb(171, 180, 253))
 }
 img.center {
-    display: block;
+    
     margin-left: auto;
     margin-right: auto;
 }
 img {
-    max-width:350px;
-    max-height:350px;
+    max-width:300px;
+    max-height:300px;
 }
-.quail {
-    float:left
+#image-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-.sparrow {
-    float:right
-} 
+#footeritem:hover {
+    transform: scale(1.2);
+    color: blue;
+}
+
+footer {
+    display:flex;
+}
+.animation1 {
+    animation-name: happybirding;
+    animation-duration: 60s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes happybirding {
+    0%{
+        background-color: whitesmoke;
+    }
+    100%{
+        background-color:  rgb(171, 180, 253);
+    }
+}
+
+/*Can I animate a bird flapping it's wings in the header? A sideways view.*/
